@@ -5,14 +5,14 @@ function Navigation(props) {
 
     return (
         <nav id="navBar">
-            <a href="#aboutMe" className={currentPage === "aboutMe" ? "navActive" : "nav"} onClick={() => setCurrentPage("aboutMe")}>
+            <a href="#aboutMe" className={currentPage === "AboutMe" ? "navActive" : "nav"} onClick={() => setCurrentPage("AboutMe")}>
                 About Me</a>
-            <a href="#myWork" className={currentPage === "myWork" ? "navActive" : "nav"} onClick={() => setCurrentPage("myWork")}>
+            <a href="#myWork" className={currentPage === "MyWork" ? "navActive" : "nav"} onClick={() => setCurrentPage("MyWork")}>
                 Work</a>
-            <a href="#contactMe" className={currentPage === "contactMe" ? "navActive" : "nav"} onClick={() => setCurrentPage("contactMe")}>
+            <a href="#contactMe" className={currentPage === "ContactMe" ? "navActive" : "nav"} onClick={() => setCurrentPage("ContactMe")}>
                 Contact</a>
             <a href="https://www.autumnlfields.com/_files/ugd/214778_b39b42608dda44888d1e3040081bdbfe.pdf"
-                target="blank" className={currentPage === "contactMe" ? "navActive" : "nav"} onClick={() => setCurrentPage("contactMe")}>
+                target="blank" className={currentPage === "ContactMe" ? "nav" : "nav"} onClick={() => setCurrentPage("ContactMe")}>
                 Resume</a>
         </nav>
     );
