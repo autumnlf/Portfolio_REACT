@@ -5,18 +5,18 @@ function Header(props) {
     const { currentPage, setCurrentPage } = props;
 
     return (
-        <Header>
-            <div>
-                <h1>Autumn Fields</h1>
-            </div>
+        <header>
+
+            <h1>Autumn Fields</h1>
+
             <div id="lineBreakTop"></div>
-            <div>
-                <Navigation
-                    currentPage={currentPage}
-                    setCurrentPage={setCurrentPage}
-                ></Navigation>
-            </div>
-        </Header>
+
+            <Navigation
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+            ></Navigation>
+
+        </header>
     );
 }
 
