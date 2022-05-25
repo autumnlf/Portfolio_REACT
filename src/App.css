@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=Molle&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: Molle;
+    src: url('./assets/Molle-Italic.ttf');
+}
+
 :root {
     --pink: #D3387B;
     --cream: #FAE2E2;
@@ -33,18 +40,22 @@ h3 {
     align-self: center;
 }
 
-a {
+.nav {
     color: var(--pink);
     font-weight: 500;
     white-space: nowrap;
 }
 
-a:link {
+.nav:link {
     text-decoration: none;
     align-self: center;
 }
 
-a:hover {
+.navActive {
+    font-weight: 800;
+}
+
+.nav:hover {
     font-weight: 800;
 }
 
