@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio_REACT/static/css/main.58719969.chunk.css",
+    "main.js": "/Portfolio_REACT/static/js/main.58f95d37.chunk.js",
+    "main.js.map": "/Portfolio_REACT/static/js/main.58f95d37.chunk.js.map",
+    "runtime-main.js": "/Portfolio_REACT/static/js/runtime-main.b6cca731.js",
+    "runtime-main.js.map": "/Portfolio_REACT/static/js/runtime-main.b6cca731.js.map",
+    "static/js/2.cf30d493.chunk.js": "/Portfolio_REACT/static/js/2.cf30d493.chunk.js",
+    "static/js/2.cf30d493.chunk.js.map": "/Portfolio_REACT/static/js/2.cf30d493.chunk.js.map",
+    "index.html": "/Portfolio_REACT/index.html",
+    "static/css/main.58719969.chunk.css.map": "/Portfolio_REACT/static/css/main.58719969.chunk.css.map",
+    "static/js/2.cf30d493.chunk.js.LICENSE.txt": "/Portfolio_REACT/static/js/2.cf30d493.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Portfolio_REACT/static/media/weatherdash.8db0673f.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b6cca731.js",
+    "static/js/2.cf30d493.chunk.js",
+    "static/css/main.58719969.chunk.css",
+    "static/js/main.58f95d37.chunk.js"
+  ]
+}
