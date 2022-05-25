@@ -1,15 +1,35 @@
 import './App.css';
+import React, { useState } from "react";
+
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Content from './components/Content';
+import AboutMe from './components/AboutMe';
+import MyWork from './components/MyWork';
+import ContactMe from './components/ContactMe';
 
 function App() {
+    const [currentPage, setCurrentPage] = useState("AboutMe");
+
+    const pageRender = () => {
+        switch (currentPage) {
+            case "AboutMe":
+                return <AboutMe />;
+            case "MyWork":
+                return <MyWork />;
+            case "ContactMe":
+                return <ContactMe />;
+            default:
+                return null;
+        }
+    };
+
     return (
-        <div className='portfolio'>
-            <Header></Header>
-            <Content></Content>
-            <Footer></Footer>
+        <div>
+            <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <main>{pageRender()}</main>
+            <Footer />
         </div>
+
     );
 }
 
