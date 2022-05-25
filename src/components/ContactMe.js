@@ -2,13 +2,23 @@ import React from 'react';
 
 function ContactMe() {
     return (
-        <div>
-            <div id="contactNav">
-                <a className='nav' href="https://github.com/autumnlf" target="blank">GitHub</a>
-                <a className='nav' href="http://www.linkedin.com/in/autumn-fields-2021" target="blank">LinkedIn</a>
-                <a className='nav' href="https://www.autumnlfields.com/my-work" target="blank">Design Portfolio</a>
-            </div>
-        </div>
+        <section id='contactForm'>
+            <h2>Contact Me</h2>
+            <div id="lineBreak"></div>
+
+            <form>
+                <h3>Name</h3>
+                <input></input>
+
+                <h3>Email</h3>
+                <input></input>
+
+                <h3>Message</h3>
+                <textarea></textarea>
+
+                <button id='submitBtn'>Submit</button>
+            </form>
+        </section>
     );
 }
 
