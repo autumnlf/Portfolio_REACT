@@ -51,7 +51,7 @@ A view of different rendered components on react app:
     ![Capture of site](./src/assets/cap1.png)
 
 * Work Page:
-    ![Capture of site](./src/assets/cap2.PNG)
+    ![Capture of site](./src/assets/cap2.png)
 
 * Contact Page:
     ![Capture of site](./src/assets/cap3.PNG)
