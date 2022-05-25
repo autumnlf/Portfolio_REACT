@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Molle;
-    src: url('./assets/Molle-Italic.ttf');
+    src: url('../src/assets/Molle-Italic.ttf');
 }
 
 :root {
@@ -13,6 +13,11 @@
 body {
     font-family: 'Montserrat';
     color: black;
+    overflow-x: hidden;
+}
+
+iframe {
+    display: none;
 }
 
 h1 {
@@ -44,6 +49,7 @@ h3 {
     color: var(--pink);
     font-weight: 500;
     white-space: nowrap;
+    margin: 5px;
 }
 
 .nav:link {
@@ -53,6 +59,10 @@ h3 {
 
 .navActive {
     font-weight: 800;
+    text-decoration: none;
+    color: var(--pink);
+    white-space: nowrap;
+    margin: 5px;
 }
 
 .nav:hover {
@@ -96,15 +106,15 @@ header {
     justify-content: space-around;
 }
 
-
-
 #aboutMe {
     width: 60%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-left: 20%;
-    margin-top: 6rem;
+    position: relative;
+    left: 20%;
+    margin: 10rem 0 0 0;
 }
 
 #aboutMe h2 {
@@ -141,15 +151,14 @@ header {
 #myWork {
     width: 80%;
     margin-left: 10%;
-    margin-top: 6rem;
+    margin: 5rem 0 6rem 10%;
 }
 
 #lineBreak {
     width: 100%;
+    margin-top: 1rem;
     height: 0.25rem;
     background-color: var(--cream);
-    border-radius: 100px;
-    border: none;
 }
 
 #workContent {
@@ -178,7 +187,7 @@ header {
     width: 100%;
     height: 15rem;
     background-size: cover;
-    background-image: url(./assets/eventplan.PNG);
+    background-image: url(../src/assets/eventplan.PNG);
     margin: 0.5rem 0 0.5rem 0;
     border-radius: 6px;
     border: none;
@@ -188,7 +197,7 @@ header {
     width: 100%;
     height: 15rem;
     background-size: cover;
-    background-image: url(./assets/community.PNG);
+    background-image: url(../src/assets/community.PNG);
     margin: 0.5rem 0 0.5rem 0;
     border-radius: 6px;
     border: none;
@@ -198,7 +207,7 @@ header {
     width: 100%;
     height: 15rem;
     background-size: cover;
-    background-image: url(./assets/weatherdash.PNG);
+    background-image: url(../src/assets/weatherdash.PNG);
     margin: 0.5rem 0 0.5rem 0;
     border-radius: 6px;
     border: none;
@@ -208,7 +217,7 @@ header {
     width: 100%;
     height: 15rem;
     background-size: cover;
-    background-image: url(./assets/passwordGenerator.PNG);
+    background-image: url(../src/assets/passwordGenerator.PNG);
     margin: 0.5rem 0 0.5rem 0;
     border-radius: 6px;
     border: none;
@@ -218,7 +227,7 @@ header {
     width: 100%;
     height: 15rem;
     background-size: cover;
-    background-image: url(./assets/teamGenerator.png);
+    background-image: url(../src/assets/teamGenerator.png);
     margin: 0.5rem 0 0.5rem 0;
     border-radius: 6px;
     border: none;
@@ -234,11 +243,11 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-#contactNav a {
-    margin: 1rem;
+#contactNav .nav {
+    margin: .5rem 3rem .5rem 3rem;
 }
 
 #upBtn {
@@ -250,8 +259,20 @@ header {
     bottom: 1rem;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: .75rem;
+    background-color: var(--cream);
+}
+
 @media only screen and (max-width: 800px) {
     header {
+        width: 100%;
+        margin: 0;
+        left: 0;
         background: none;
         justify-content: center;
         box-shadow: none;
@@ -264,44 +285,37 @@ header {
     #navBar {
         margin: .75rem 2rem 0 2rem;
         width: 100%;
+        flex-wrap: wrap;
     }
 
     #aboutMe {
         width: 80%;
-        margin-left: 10%;
+        left: 10%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    #aboutMe h2 {
+        text-align: center;
     }
 
     #selfie {
         width: 10rem;
         height: 10rem;
+        margin: 0 0 1rem 0;
     }
 
     #workContent {
         justify-content: center;
     }
 
-    #project {
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    #aboutMe {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 4rem;
-    }
-
-    #selfie {
-        margin: 0 0 1rem 0;
+    #contactNav .nav {
+        margin: .5rem 1rem .5rem 1rem;
     }
 
     #lineBreakAbout {
         display: block;
-    }
-
-    #aboutMe h2 {
-        text-align: center;
     }
 
     #aboutContent p {
