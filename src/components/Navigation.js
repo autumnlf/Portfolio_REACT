@@ -12,7 +12,7 @@ function Navigation(props) {
             <a className={currentPage === "ContactMe" ? "navActive" : "nav"} onClick={() => setCurrentPage("ContactMe")}>
                 Contact</a>
             <a href="https://www.autumnlfields.com/_files/ugd/214778_b39b42608dda44888d1e3040081bdbfe.pdf"
-                target="blank" className={currentPage === "ContactMe" ? "nav" : "nav"} onClick={() => setCurrentPage("ContactMe")}>
+                target="blank" className="nav">
                 Resume</a>
         </nav>
     );
